@@ -1,11 +1,11 @@
 #include <cstdlib>
 
-void g(void){
+void foo(void){
 	malloc(4000);
 }
-void f(void){
+void bar(void){
 	malloc(2000);
-	g();
+	foo();
 }
 int main(void){
 	int* a[10];
@@ -17,9 +17,8 @@ int main(void){
 		}
 	}
 
-	f();
-
-	g();
+	foo();
+	bar();
 
 	for (int i = 0; i < 10; i++) {
 		delete [] a[i];
