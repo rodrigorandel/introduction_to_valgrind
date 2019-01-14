@@ -1,6 +1,16 @@
 # Tutorial: Introduction to Valgrind
 This tutorial aims to cover the basic principles of [Valgrind](http://valgrind.org).  It was presented by [Rodrigo Randel](https://www.gerad.ca/events/1576).
     
+## Motivation
+Valgrind is a widely used programming tool for debugging and profiling programs. Valgrind's tools are designed to dynamically perform analysis of your program and automatically detect commons and rares bugs, many of which would take hours to be found manually, or would never be found at all.
+
+By using Valgrind tools, such as the memory checker and the cache profiler, you can easily identify when a bug occurs, and get instant feedback about what the bug is, where it occurred, and why. As for Valgrind's profiling tools, use those whenever you want to gather information about how your program is spending its time, or you if want to speed it up. Moreover, Valgrind works with programs written in any language, such as C, C++, Java, Python and many others.
+
+In this tutorial, we are going to cover the following topics:
+
+   - Present the main aspects of Valgrind and explain why and when you should use it.
+   - Give an overview of all the six tools present in the Valgrind's current release, explaining in details two of them: Memcheck and Cachegrind.
+   - Present how to use Valgrind and how to interpret its output, either via a terminal window or via using an IDE such as Eclipse.
 
 ## 1. How to run the examples
 Each folder has an [Eclipse](https://www.eclipse.org) project with the code and Makefile for the correspondent example. 
